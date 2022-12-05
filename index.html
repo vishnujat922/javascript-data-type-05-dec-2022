@@ -33,6 +33,10 @@
             <li>string "" /'' /``</li>
             <li>object {}</li>
         </ol>
+        <h3 data-news1="news1"></h3>
+        <p data-news2="news2"></p>
+        <span data-news3="news3"></span>
+        <h2 data-news4="news4"></h2>
         <script src="./js/script2.js"></script>
         <script>
              //1 property:value
@@ -57,7 +61,101 @@
         document.write(`<div>`+student4.name+`</div>`);
         </script>    
         <script>
-
+            let news1 = {
+                w1:"According",
+                w2:`to`,
+                w3:'the',
+                w4:"health",
+                w5:'department,',
+                w6:`weekly`,
+                w7:"new",
+                w8:'of',
+                w9:`Covid-19`,
+                w10:"have",
+                w11:`reduced`,
+                w12:"from",
+                w13:'471',
+                w14:`to`,
+                w15:"293",
+                w16:'between',
+                w17:`November`,
+                w18:"21-",
+                w19:`27`,
+                w20:'and',
+                w21:"November",
+                w22:"28",
+                w23:"to",
+                w24:"December",
+                w25:4    
+            }
+            var n1 = news1.w1+" "+news1.w2+" "+news1.w3+" "+news1.w4+" "+news1.w5+" "+news1.w6+" "+news1.w7+" "+news1.w8+" "+news1.w9+" "+news1.w10+" "+news1.w11+" "+news1.w12+" "+news1.w13+" "+news1.w14+" "+news1.w15+" "+news1.w16+" "+news1.w17+" "+news1.w18+" "+news1.w19+" "+news1.w20+" "+news1.w21+" "+news1.w22+" "+news1.w24+" "+news1.w24+" "+news1.w25;
+            console.log(n1)
+            document.querySelector('h3[data-news1="news1"]').innerHTML = n1;
+            // object.property
+            
+            const news2 = {
+                w1:"New",
+                w2:'Concerns',
+                w3:`shroud`,
+                w4:"Ayodhya",
+                w5:'as',
+                w6:`it marks`,
+                w7:"30",
+                w8:' years',
+                w9:"of ",
+                w10:"Babri",
+                w11:" Masjid",
+                w12:"demolition",
+            }
+            const n2 = news2.w1+" "+news2.w2+" "+news2.w3+" "+news2.w4+" "+news2.w5+" "+news2.w6+" "+news2.w7+" "+news2.w8+" "+news2.w9+" "+news2.w10+" "+news2.w11+" "+news2.w12;
+            console.log(n2)
+            window.alert('p[data-news2="news2"]'+n2);
+            let news3 = {
+                w1:'Thirty',
+                w2:"years",
+                w3:`After`,
+                w4:"a demolition",
+                w5:'shook',
+                w5:`Ayodhya, `,
+                w6:"and also the",
+                w7:'rest of the country, the',
+                w8:`temple `,
+                w9:"town",
+                w10:'is in the ',
+                w11:`news `,
+                w12:"again ",
+                w13:'for a',
+                w14:`demolition -- `,
+                w15:"a drive to ",
+                w16:`bring `,
+                w17:'down',
+                w18:"shops along a ",
+                w19:`crowded`,
+                w20:'road ',
+                w21:"to broaden it,",
+                w22:'part',
+                w23:`of `,
+                w24:" Ayodhya’s ",
+                w25:`development.`,
+            }
+            let n3 = news3.w1+" "+news3.w2+" "+news3.w3+" "+news3.w4+" "+news3.w5+" "+news3.w6+" "+news3.w7+" "+news3.w8+" "+news3.w9+" "+news3.w10+" "+news3.w11+" "+news3.w12+" "+news3.w13+" "+news3.w14+" "+news3.w15+" "+news3.w16+" "+news3.w17+" "+news3.w18+" "+news3.w19+" "+news3.w20+" "+news3.w21+" "+news3.w22+" "+news3.w24+" "+news3.w24+" "+news3.w25;
+            console.log(n3)
+            document.write(`<span>`+n3+`</span>`);
+            var news4 = {
+                w1:"Career",
+                w2:'Horoscope',
+                w3:`Today`,
+                w4:"6 December, '22:",
+                w4:'Its',
+                w5:`time`,
+                w6:"to",
+                w7:'start',
+                w8:`working `,
+                w9:"together",
+            }
+            var n4 =news4.w1+" "+news4.w2+" "+news4.w3+" "+news4.w4+" "+news4.w5+" "+news4.w6+" "+news4.w7+" "+news4.w8+" "+news4.w9;
+            console.log(n4)
+            document.querySelector('h2[data-news4="news4"]').innerHTML = n4; 
         </script>
     </body>
 </html>
